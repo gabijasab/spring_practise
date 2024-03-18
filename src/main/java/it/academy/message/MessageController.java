@@ -42,7 +42,7 @@ public class MessageController {
     @GetMapping("{messageContent}")
     public String createMessage(@PathVariable String messageContent) {
         String message = repository.save(MessageBean.builder().message(messageContent).build()).getMessage();
-        return "Message: `%s` was save successfullyy".formatted(message);
+        return "Message: `%s` was save successfullyy!!!!".formatted(message);
     }
 
 }
